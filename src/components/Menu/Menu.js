@@ -1,18 +1,16 @@
-// Компанент Menu
+// Компанент Index
 import React from 'react';
-import AppRouter from './Router';
-import Recipe from './Recipe.js'
-import '../styles/style.css'
+import Recipe from './Recipe.js';
+import '../../styles/style.css';
 
 const Menu = ({recipes}) =>
-    <article>
+    <article >
         <header>
             <h1>Delicious Recipes</h1>
         </header>
         {/*<Button onClick={() => this.setState({ open: !this.state.open })}>*/}
         {/*click*/}
         {/*</Button>*/}
-        <AppRouter/>
         <div className="recipes">
             {recipes.map((recipe, i) =>
                 <Recipe key={i} {...recipe} />)

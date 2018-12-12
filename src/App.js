@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react';
+import AppRouter from './components/Router';
+import Footer from './components/Footer/Footer';
 import logo from './logo.svg';
 import './App.css';
 
@@ -24,10 +26,11 @@ class App extends Component {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <Menu recipes={data} />
+                    <AppRouter  />
                 </div>
             </div>
         </div>
+          <Footer/>
       </div>
     );
   }

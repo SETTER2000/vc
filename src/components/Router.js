@@ -1,53 +1,39 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import Menu from './Menu/Menu';
+import News from './News/News';
+import About from './About/About';
+import Home from './Home/Home';
 import {Jumbotron, Grid, Row, Col, Image, Button, Breadcrumb} from 'react-bootstrap';
+import data from "../data/recipes";
+
 const routes = [
     {
         path: "/",
         exact: true,
         sidebar: () => <div>home!</div>,
-        main: () => <h2>Home</h2>
+        main: () => <Home/>
     },
     {
-        path: "/bubblegum",
-        sidebar: () => <div>bubblegum!</div>,
-        main: () => <h2>Bubblegum</h2>
+        path: "/news",
+        sidebar: () => <div>news!</div>,
+        main: () => <News/>
     },
     {
-        path: "/shoelaces",
-        sidebar: () => <div>shoelaces!</div>,
-        main: () => <h2>Shoelaces</h2>
+        path: "/about",
+        sidebar: () => <div>about!</div>,
+        main: () => <About/>
+    },
+    {
+        path: "/menu",
+        sidebar: () => <div>menu!</div>,
+        main: () => <Menu recipes={data}/>
     }
 ];
-// const Home = () => <h2>Home</h2>;
-// const About = () => <h2>About</h2>;
-// const Users = () => <h2>Users</h2>;
-// const Topic = ({match}) => <h3>Requested Param: {match.params.id}</h3>;
-// const Docs = () => <h2>Docs</h2>;
-// const Topics = ({match}) => (
-//     <div>
-//         <h2>Topics</h2>
-//
-//         <ul>
-//             <li>
-//                 <Link to={`${match.url}/components`}>Components</Link>
-//             </li>
-//             <li>
-//                 <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-//             </li>
-//         </ul>
-//
-//         <Route path={`${match.path}/:id`} component={Topic}/>
-//         <Route
-//             exact
-//             path={match.path}
-//             render={() => <h3>Please select a topic.</h3>}
-//         />
-//     </div>
-// );
+
 const AppRouter = () => (
     <Router>
-        <div style={{ display: "flex" }}>
+        <div style={{display: "flex"}}>
             <div
                 style={{
                     padding: "10px",
@@ -55,15 +41,22 @@ const AppRouter = () => (
                     background: "#f0f0f0"
                 }}
             >
-                <ul style={{ listStyleType: "none", padding: 0 }}>
+                <ul style={{
+                    listStyleType: "none",
+                    fontSize:"2em",
+                    padding: 0
+                }}>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/bubblegum">Bubblegum</Link>
+                        <Link to="/news">News</Link>
                     </li>
                     <li>
-                        <Link to="/shoelaces">Shoelaces</Link>
+                        <Link to="/About">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/menu">Menu</Link>
                     </li>
                 </ul>
 
@@ -84,7 +77,10 @@ const AppRouter = () => (
                 ))}
             </div>
 
-            <div style={{ flex: 1, padding: "10px" }}>
+            <div style={{
+                flex: 1,
+                padding: "10px 0 0 100px",
+                textAlign:"left"}}>
                 {routes.map((route, index) => (
                     // Render more <Route>s with the same paths as
                     // above, but different components this time.
@@ -98,20 +94,6 @@ const AppRouter = () => (
             </div>
         </div>
     </Router>
-  /*  {/!*<Router>*!/}
-        {/!*<div>*!/}
-            {/!*<Breadcrumb>*!/}
-                {/!*<li><Route exact path="/" component={Home}/></li>*!/}
-                {/!*<li><Route path="/about" component={About}/></li>*!/}
-                {/!*<li><Route path="/topics" component={Topics}/></li>*!/}
-            {/!*</Breadcrumb>*!/}
-
-            {/!*<Route path="/" exact component={Home}/>*!/}
-            {/!*<Route path="/about/" component={About}/>*!/}
-            {/!*<Route path="/users/" component={Users}/>*!/}
-            {/!*<Route path="/docs/" component={Docs}/>*!/}
-        {/!*</div>*!/}
-    {/!*</Router>*!/}*/
 );
 
 export default AppRouter;
