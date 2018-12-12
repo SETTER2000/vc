@@ -1,7 +1,6 @@
 // Компанент Index
 import React from 'react';
 import Recipe from './Recipe.js';
-import {Grid, Row, Col, Image, Button, Breadcrumb} from 'react-bootstrap';
 import '../../styles/style.css';
 
 const Menu = ({recipes}) =>
@@ -9,9 +8,6 @@ const Menu = ({recipes}) =>
         <header>
             <h1>Delicious Recipes</h1>
         </header>
-        {/*<Button onClick={() => this.setState({ open: !this.state.open })}>*/}
-        {/*click*/}
-        {/*</Button>*/}
         <div className="recipes">
             {recipes.map((recipe, i) =>
                 <Recipe key={i} {...recipe} />)
