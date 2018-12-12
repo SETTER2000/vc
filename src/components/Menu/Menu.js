@@ -1,6 +1,7 @@
 // Компанент Index
 import React from 'react';
 import Recipe from './Recipe.js';
+import {Grid, Row, Col, Image, Button, Breadcrumb} from 'react-bootstrap';
 import '../../styles/style.css';
 
 const Menu = ({recipes}) =>
