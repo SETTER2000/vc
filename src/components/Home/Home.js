@@ -1,10 +1,11 @@
 import React from 'react';
-import {Grid, Row, Col, Image, Button, Breadcrumb} from 'react-bootstrap';
 
 const Home = () =>
     <div>
-        <h1>Home</h1>
+        <header>
+            <h1>Home</h1>
+        </header>
         <p>Lorem ipsum dolor sit amet! </p>
-    </div>
+    </div>;
 
 export default Home;

@@ -4,7 +4,7 @@ import Recipe from './Recipe.js';
 import '../../styles/style.css';
 
 const Menu = ({recipes}) =>
-    <article >
+    <div >
         <header>
             <h1>Delicious Recipes</h1>
         </header>
@@ -13,5 +13,5 @@ const Menu = ({recipes}) =>
                 <Recipe key={i} {...recipe} />)
             }
         </div>
-    </article>;
+    </div>;
 export default Menu

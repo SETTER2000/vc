@@ -2,7 +2,9 @@ import React from 'react';
 
 const About = () =>
     <div>
-        <h1>About</h1>
+        <header>
+            <h1>About</h1>
+        </header>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ducimus eaque esse ex excepturi facere,
             ipsum nam natus
             non
@@ -67,29 +69,29 @@ const About = () =>
         saepe unde
         voluptate.</p>
         <p>
-        Architecto beatae commodi laborum libero molestias nihil nostrum unde, voluptatem. Ab adipisci, aliquid
-        architecto
-        assumenda dolorem doloribus eligendi eos et eveniet expedita hic id illo incidunt iste, laudantium libero magnam
-        minus
-        molestiae
-        natus neque nesciunt numquam omnis perspiciatis quasi, sed similique sint tenetur veritatis vero voluptatibus?
-        Amet
-        assumenda
-        commodi culpa cumque cupiditate deserunt doloribus ducimus ea est facilis fugiat illo laborum modi, nam nihil
-        officiis,
-        perspiciatis praesentium quas quasi quia reiciendis sed suscipit. Aperiam at cupiditate error iste labore,
-        minima nihil,
-        nisi
-        numquam ullam veritatis voluptatem voluptates? Asperiores eaque facere labore nemo odio quidem quis quo rem!
-        Atque aut
-        corporis
-        eum exercitationem officiis perferendis possimus quam tenetur velit voluptatem! Blanditiis dicta facere quidem
-        rem
-        repudiandae.
-        Est expedita explicabo facere labore modi molestias natus rem reprehenderit repudiandae vero. Amet beatae earum
-        error
-        explicabo
-        minus numquam tempore temporibus voluptatibus?</p>
+            Architecto beatae commodi laborum libero molestias nihil nostrum unde, voluptatem. Ab adipisci, aliquid
+            architecto
+            assumenda dolorem doloribus eligendi eos et eveniet expedita hic id illo incidunt iste, laudantium libero magnam
+            minus
+            molestiae
+            natus neque nesciunt numquam omnis perspiciatis quasi, sed similique sint tenetur veritatis vero voluptatibus?
+            Amet
+            assumenda
+            commodi culpa cumque cupiditate deserunt doloribus ducimus ea est facilis fugiat illo laborum modi, nam nihil
+            officiis,
+            perspiciatis praesentium quas quasi quia reiciendis sed suscipit. Aperiam at cupiditate error iste labore,
+            minima nihil,
+            nisi
+            numquam ullam veritatis voluptatem voluptates? Asperiores eaque facere labore nemo odio quidem quis quo rem!
+            Atque aut
+            corporis
+            eum exercitationem officiis perferendis possimus quam tenetur velit voluptatem! Blanditiis dicta facere quidem
+            rem
+            repudiandae.
+            Est expedita explicabo facere labore modi molestias natus rem reprehenderit repudiandae vero. Amet beatae earum
+            error
+            explicabo
+            minus numquam tempore temporibus voluptatibus?</p>
     </div>
 
 export default About
