@@ -45,18 +45,18 @@ const NavbarCust = () =>
                     <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
                         About
                     </NavItem>
-                    <NavItem eventKey={3} componentClass={Link} href="/menu" to="/menu">
+                    <NavItem eventKey={4} componentClass={Link} href="/menu" to="/menu">
                         Menu
                     </NavItem>
                     <NavItem eventKey={5} componentClass={Link} href="/news" to="/news">
                         News
                     </NavItem>
                     <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Action</MenuItem>
-                        <MenuItem eventKey={3.2}>Another action</MenuItem>
+                        <MenuItem eventKey={3.1} componentClass={Link} href="/about" to="/about" >About</MenuItem>
+                        <MenuItem eventKey={3.2} componentClass={Link} href="/news" to="/news">News</MenuItem>
                         <MenuItem eventKey={3.3}>Something else here</MenuItem>
                         <MenuItem divider/>
-                        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                        <MenuItem eventKey={3.3} componentClass={Link} href="/menu" to="/menu">Menu</MenuItem>
                     </NavDropdown>
                 </Nav>
 
