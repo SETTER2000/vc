@@ -1,6 +1,7 @@
 import React from 'react';
 import {Jumbotron, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import AddColorForm from "../AddColorForm/AddColorForm";
 
 const Books = () =>
     <Jumbotron>
@@ -14,6 +15,12 @@ const Books = () =>
             <Button bsStyle="primary">Menu</Button>
             </Link>
         </p>
+        <AddColorForm onNewColor={(title, color, name) => {
+            alert(`New Color: Имя цвета ${title} Цвет ${color} ФИО ${name}`);
+            console.log(`TODO: add new ${title} and ${color} and ${name} to the list`);
+            console.log(`TODO: render UI with new Color`);
+        }}/>
+
     </Jumbotron>;
 
 

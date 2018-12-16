@@ -4,7 +4,6 @@ import NavbarCust from "./NavbarCust/NavbarCust";
 import Menu from './Menu/Menu';
 import News from './News/News';
 import About from './About/About';
-import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import Books from './Books/Books';
 import {ListGroup, ListGroupItem, Grid, Row, Col} from 'react-bootstrap';
