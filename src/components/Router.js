@@ -6,6 +6,7 @@ import News from './News/News';
 import About from './About/About';
 import Footer from './Footer/Footer';
 import Books from './Books/Books';
+import ColorOrganizer from './color-organizer/ColorOrganizer';
 import {ListGroup, ListGroupItem, Grid, Row, Col} from 'react-bootstrap';
 import data from "../data/recipes";
 
@@ -30,6 +31,11 @@ const routes = [
         path: "/menu",
         sidebar: () => <div>menu!</div>,
         main: () => <Menu recipes={data}/>
+    },
+    {
+        path: "/color",
+        sidebar: () => <div>color!</div>,
+        main: () => <ColorOrganizer />
     }
 ];
 
@@ -59,6 +65,11 @@ const AppRouter = () => (
                             <Link to="/news">
                                 <ListGroupItem>
                                     News
+                                </ListGroupItem>
+                            </Link>
+                            <Link to="/color">
+                                <ListGroupItem>
+                                    Color
                                 </ListGroupItem>
                             </Link>
                             {/*{routes.map((route, index) => (

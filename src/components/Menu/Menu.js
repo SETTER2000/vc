@@ -1,7 +1,7 @@
 // Компанент Index
 import React from 'react';
 import Recipe from './Recipe.js';
-import '../../styles/style.css';
+
 
 const Menu = ({recipes}) =>
     <div >

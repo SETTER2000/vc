@@ -1,0 +1,31 @@
+@import "globals";
+//body {
+//  /* Margin bottom by footer height */
+//  margin-bottom: 60px;
+//}
+//html, div#root {
+//  min-height: 100%;
+//  position: relative;
+//}
+//
+//h1 {
+//  @include clear;
+//}
+
+//body {
+//
+//  @include clear;
+//  @include fade-bg($light, $light-grey);
+//
+//  div.app {
+//    display: flex;
+//    flex-direction: column;
+//    height: 100%;
+//  }
+//
+//}
+
+input {
+  outline: none;
+}
+

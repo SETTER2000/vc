@@ -9,14 +9,6 @@ const NavbarCust = () =>
         <Navbar collapseOnSelect fluid>
             <Navbar.Header>
                 <Navbar.Brand>
-                    {/*  <div className="App">
-                        <header className="App-header">
-
-                            <p>
-                                Edit <code>src/App.js</code> and save to reload.
-                            </p>
-                        </header>
-                    </div>*/}
                     <Link to="/"> <img src={logo} className="App-logo" alt="logo"/> </Link>
                 </Navbar.Brand>
                 <Navbar.Brand>
@@ -25,22 +17,6 @@ const NavbarCust = () =>
                 <Navbar.Toggle/>
             </Navbar.Header>
             <Navbar.Collapse>
-                {/* <Nav>
-                    <NavItem eventKey={1} href="#">
-                        Link
-                    </NavItem>
-                    <NavItem eventKey={2} href="#">
-                        Link
-                    </NavItem>
-                    <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Action</MenuItem>
-                        <MenuItem eventKey={3.2}>Another action</MenuItem>
-                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                        <MenuItem divider/>
-                        <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                    </NavDropdown>
-                </Nav>*/}
-
                 <Nav >
                     <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
                         About
@@ -57,9 +33,9 @@ const NavbarCust = () =>
                         <MenuItem eventKey={3.3}>Something else here</MenuItem>
                         <MenuItem divider/>
                         <MenuItem eventKey={3.3} componentClass={Link} href="/menu" to="/menu">Menu</MenuItem>
+                        <MenuItem eventKey={3.4} componentClass={Link} href="/color" to="/color">Color</MenuItem>
                     </NavDropdown>
                 </Nav>
-
             </Navbar.Collapse>
         </Navbar>;
 
