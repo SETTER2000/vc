@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import AddColorForm from "../AddColorForm/AddColorForm";
+import '../../styles/Books.scss'
 
 const Books = () =>
     <Jumbotron>
@@ -12,14 +12,40 @@ const Books = () =>
         </p>
         <p>
             <Link to="/menu">
-            <Button bsStyle="primary">Menu</Button>
+            <Button bsStyle="blue">Blue</Button>
             </Link>
         </p>
-        <AddColorForm onNewColor={(title, color, name) => {
-            alert(`New Color: Имя цвета ${title} Цвет ${color} ФИО ${name}`);
-            console.log(`TODO: add new ${title} and ${color} and ${name} to the list`);
-            console.log(`TODO: render UI with new Color`);
-        }}/>
+        <p>
+            <Link to="/menu">
+            <Button bsStyle="primary">Primary</Button>
+            </Link>
+        </p>
+        <p>
+            <Link to="/menu">
+            <Button bsStyle="green">Green</Button>
+            </Link>
+        </p><p>
+            <Link to="/menu">
+            <Button bsStyle="info">Info</Button>
+            </Link>
+        </p><p>
+            <Link to="/menu">
+            <Button bsStyle="success">Success</Button>
+            </Link>
+        </p><p>
+        <Link to="/menu">
+            <Button bsStyle="yellow">Yellow</Button>
+        </Link>
+        </p><p>
+            <Link to="/menu">
+            <Button bsStyle="default">Default</Button>
+            </Link>
+        </p>
+        {/*<AddColorForm onNewColor={(title, color, name) => {*/}
+            {/*alert(`New Color: Имя цвета ${title} Цвет ${color} ФИО ${name}`);*/}
+            {/*console.log(`TODO: add new ${title} and ${color} and ${name} to the list`);*/}
+            {/*console.log(`TODO: render UI with new Color`);*/}
+        {/*}}/>*/}
 
     </Jumbotron>;
 

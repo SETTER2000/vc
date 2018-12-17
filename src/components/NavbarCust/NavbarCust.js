@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import logo from '../../logo.svg';
-import './NavbarCust.css'
+import '../../styles/NavbarCust.scss'
 
 const NavbarCust = () =>
 
@@ -18,7 +18,7 @@ const NavbarCust = () =>
             </Navbar.Header>
             <Navbar.Collapse>
                 <Nav >
-                    <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
+                    <NavItem  eventKey={2} componentClass={Link} href="/about" to="/about">
                         About
                     </NavItem>
                     <NavItem eventKey={4} componentClass={Link} href="/menu" to="/menu">

@@ -9,6 +9,7 @@ import Books from './Books/Books';
 import ColorOrganizer from './color-organizer/ColorOrganizer';
 import {ListGroup, ListGroupItem, Grid, Row, Col} from 'react-bootstrap';
 import data from "../data/recipes";
+import '../styles/Router.scss'
 
 const routes = [
     {
@@ -48,27 +49,27 @@ const AppRouter = () => (
                     <Col md={2} className="sidebar-left">
                         <ListGroup>
                             <Link to="/">
-                                <ListGroupItem>
+                                <ListGroupItem className="sidebar-blue">
                                     Books
                                 </ListGroupItem>
                             </Link>
-                            <Link to="/menu">
-                                <ListGroupItem>
+                            <Link to="/menu" >
+                                <ListGroupItem className="sidebar-blue">
                                     Menu
                                 </ListGroupItem>
                             </Link>
                             <Link to="/about">
-                                <ListGroupItem>
+                                <ListGroupItem className="sidebar-blue">
                                     About
                                 </ListGroupItem>
                             </Link>
                             <Link to="/news">
-                                <ListGroupItem>
+                                <ListGroupItem className="sidebar-blue">
                                     News
                                 </ListGroupItem>
                             </Link>
                             <Link to="/color">
-                                <ListGroupItem>
+                                <ListGroupItem className="sidebar-blue">
                                     Color
                                 </ListGroupItem>
                             </Link>
