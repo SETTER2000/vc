@@ -38,7 +38,7 @@ const Books = () =>
         </Link>
         </p><p>
             <Link to="/menu">
-            <Button bsStyle="default">Default</Button>
+            <Button>Default</Button>
             </Link>
         </p>
         {/*<AddColorForm onNewColor={(title, color, name) => {*/}
