@@ -22,7 +22,7 @@ const AddColorForm = ({onNewColor=f=>f}) => {
                    placeholder="color title..." required/>
             <input ref={input => _color = input}
                    type="color" required/>
-            <button bsStyle="green">ADD</button>
+            <button className="btn btn-green">ADD</button>
         </form>
     )
 

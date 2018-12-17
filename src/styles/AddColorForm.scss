@@ -8,7 +8,7 @@ form.add-color {
     flex-grow: 1;
   }
 
-  input, button {
+  input {
     margin: .5em;
     padding: .25em;
     font-size: 1.2em;
@@ -19,11 +19,11 @@ form.add-color {
     padding: 0;
     height: +2em;
   }
-
-  button {
-    background-color: green;
-    color: white;
-    border: none;
-  }
+  //
+  //button {
+  //  background-color: green;
+  //  color: white;
+  //  border: none;
+  //}
 
 }
