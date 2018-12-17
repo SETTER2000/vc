@@ -24,21 +24,40 @@ const Books = () =>
             <Link to="/menu">
             <Button bsStyle="green">Green</Button>
             </Link>
-        </p><p>
+        </p>
+        <p>
             <Link to="/menu">
             <Button bsStyle="info">Info</Button>
             </Link>
-        </p><p>
+        </p>
+        <p>
             <Link to="/menu">
             <Button bsStyle="success">Success</Button>
             </Link>
-        </p><p>
+        </p>
+        <p>
         <Link to="/menu">
             <Button bsStyle="yellow">Yellow</Button>
         </Link>
-        </p><p>
+        </p>
+        <p>
+            <Link to="/menu">
+                <Button bsStyle="warning">Warning</Button>
+            </Link>
+        </p>
+        <p>
+            <Link to="/menu">
+                <Button bsStyle="danger">Danger</Button>
+            </Link>
+        </p>
+        <p>
             <Link to="/menu">
             <Button>Default</Button>
+            </Link>
+        </p>
+        <p>
+            <Link to="/menu">
+                <Button bsStyle="link">Link</Button>
             </Link>
         </p>
         {/*<AddColorForm onNewColor={(title, color, name) => {*/}

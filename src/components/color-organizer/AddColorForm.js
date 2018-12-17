@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Button} from 'react-bootstrap'
 import '../../styles/AddColorForm.scss'
 
 const AddColorForm = ({onNewColor=f=>f}) => {
@@ -21,7 +22,7 @@ const AddColorForm = ({onNewColor=f=>f}) => {
                    placeholder="color title..." required/>
             <input ref={input => _color = input}
                    type="color" required/>
-            <button>ADD</button>
+            <button bsStyle="green">ADD</button>
         </form>
     )
 
