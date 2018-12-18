@@ -3,7 +3,7 @@ import React from 'react';
 import Recipe from './Recipe.js';
 
 
-const Menu = ({recipes}) =>
+const Recipes = ({recipes}) =>
     <div >
         <header>
             <h1>Delicious Recipes</h1>
@@ -14,4 +14,4 @@ const Menu = ({recipes}) =>
             }
         </div>
     </div>;
-export default Menu
+export default Recipes

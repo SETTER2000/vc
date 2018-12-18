@@ -1,5 +1,5 @@
 import React from 'react';
-import {Jumbotron, Button} from 'react-bootstrap';
+import {Jumbotron, ButtonToolbar, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../../styles/Books.scss'
 
@@ -10,11 +10,18 @@ const Books = () =>
             This is a simple hero unit, a simple jumbotron-style component for calling
             extra attention to featured content or information.
         </p>
-        <p>
-            <Link to="/menu">
+        <ButtonToolbar>
             <Button bsStyle="blue">Blue</Button>
-            </Link>
-        </p>
+            <Button bsStyle="primary">Primary</Button>
+            <Button bsStyle="green">Green</Button>
+            <Button bsStyle="info">Info</Button>
+            <Button bsStyle="success">Success</Button>
+            <Button bsStyle="yellow">Yellow</Button>
+            <Button bsStyle="warning">Warning</Button>
+            <Button bsStyle="danger">Danger</Button>
+            <Button>Default</Button>
+            <Button bsStyle="link">Link</Button>
+        </ButtonToolbar><br/>
         <p>
             <Link to="/menu">
             <Button bsStyle="primary">Primary</Button>

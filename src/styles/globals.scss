@@ -79,6 +79,6 @@ $break-xl: 2000px;
   border-color: $light-grey
 }
 .sidebar-blue:active, .sidebar-blue:hover{
-  @include fade-bg-button($light-blue, $light-blue);
+  @include fade-bg-button($bt-blue-default, $light-blue);
   color: $light;
 }
