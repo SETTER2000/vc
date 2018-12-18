@@ -23,18 +23,15 @@ const AppRouter = () => (
                         <SidebarList list={sidebar}/>
                         <SidebarAncillary list={routes}/>
 
-                        {routes.map((route, index) => (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                exact={route.exact}
-                                component={route.main}
-                            />
-                        ))}
+                        {/*{routes.map((route, index) => (*/}
+                            {/*<Route*/}
+                                {/*key={index}*/}
+                                {/*path={route.path}*/}
+                                {/*exact={route.exact}*/}
+                                {/*component={route.main}*/}
+                            {/*/>*/}
+                        {/*))}*/}
                     </Col>
-
-
-
                     <Main list={routes}/>
                 </Row>
             </Grid>
