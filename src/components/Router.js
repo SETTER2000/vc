@@ -6,8 +6,6 @@ import Footer from './Footer/Footer';
 import SidebarList from './Workspace/SidebarList';
 import Main from "./Workspace/Main";
 
-
-import sidebar from "../data/sidebar";
 import routes from "../data/routes";
 
 import '../styles/Router.scss'
@@ -20,7 +18,7 @@ const AppRouter = () => (
             <Grid fluid={true}>
                 <Row>
                     <Col md={2} className="sidebar-left">
-                        <SidebarList list={sidebar}/>
+                        <SidebarList list={routes}/>
                         <SidebarAncillary list={routes}/>
 
                         {/*{routes.map((route, index) => (*/}

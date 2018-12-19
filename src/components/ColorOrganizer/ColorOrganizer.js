@@ -18,6 +18,9 @@ export default class ColorOrganizer extends Component {
     }
 
     addColor(title, color) {
+        /*
+        * Функциональный setState — это изменение состояния компонента отдельно от объявления его класса.
+        * */
         this.setState(prevState => ({
             colors: [
                 ...prevState.colors,

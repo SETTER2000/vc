@@ -40,11 +40,15 @@ section.color {
     top: .5em;
     right: .5em;
     flex-basis: calc(12% - 1em);
-    text-align: right;
-    @include fade-bg($light, $light-grey);
-    padding: .75em;
-    border-radius: .5px;
+    font-size: small;
+    width: 2em;
+    height: 2em;
+    border-radius: 100px;
+    text-align: center;
   }
+
+
+
 
   > div:last-child {
     display: flex;
