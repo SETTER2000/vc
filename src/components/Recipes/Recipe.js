@@ -6,9 +6,9 @@ import Instructions from './Instructions'
 import Summary from "./Summary";
 
 const Recipe = ({name, ingredients, steps}) =>
-    <section id={name.toLowerCase().replace(/ /g, '-')}>
+    <div className="col-md-4" id={name.toLowerCase().replace(/ /g, '-')}>
         <Summary ingredients={ingredients.length} title={name} steps={steps.length}/>
         <IngredientsList list={ingredients}/>
         <Instructions title="Cooking Instructions" steps={steps}/>
-    </section>;
+    </div>;
 export default Recipe

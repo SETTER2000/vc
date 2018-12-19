@@ -1,8 +1,5 @@
 import React from 'react';
 import {Route} from "react-router-dom";
-import SubMenuList from './SubMenuList'
-import about from "../../data/about";
-
 
 const SidebarAncillary = ({list}) =>
     <div>
