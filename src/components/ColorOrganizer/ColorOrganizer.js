@@ -37,12 +37,7 @@ export default class ColorOrganizer extends Component {
     rateColor(id, rating) {
         this.setState(prevState => ({
             colors: prevState.colors.map(color =>
-                (color.id !== id) ?
-                    color :
-                    {
-                        ...color,
-                        rating
-                    }
+                (color.id !== id) ? color : {...color, rating}
             )
         }))
     }

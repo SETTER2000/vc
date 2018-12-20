@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom'
 import {Col} from 'react-bootstrap'
 
 const Main = ({list}) =>
-    <Col md={10}>
+    <Col md={9}>
         {list.map((route, i) =>
             <Route  key={i} {...route}/>
         )}

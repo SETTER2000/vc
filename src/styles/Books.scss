@@ -1,9 +1,39 @@
 @import "globals";
 
-body{
-  color: $dark-grey;
-  background-image: url("/assets/spiration-light.png");
+.book{
+  background-color: white;
+  border: 1px #cecece solid;
+  margin: 1em;
 }
+
+a.author, a:-webkit-any-link {
+  color: #767579;
+  text-decoration: none;
+  padding-top:10px ;
+  display: block;
+}
+
+a.author:hover, a.title:hover {
+  color: $light-blue;
+}
+
+a.title {
+  display: block;
+  color: $black;
+  font-size: large;
+  padding: 5px 0;
+}
+
+//.thumbnail {
+//  margin: 1em 0;
+//  padding: 0;
+//  background-image: url("/assets/1.jpg");
+//  height: 330px;
+//  //background-size: contain;
+//  //background-clip: border-box;
+//  //background-origin: content-box;
+//}
+
 //.btn-primary{
 //  background-color: linear-gradient(white, $light-blue);
 //  //background-image: none;

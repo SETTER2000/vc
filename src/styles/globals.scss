@@ -1,13 +1,15 @@
 $light: rgba(255, 255, 255, 1);
 $light-grey: rgba(229, 229, 229, 1);
-$light-blue:  #0C9BE3;
+$light-blue: #0C9BE3;
 $light-yellow: rgba(177, 175, 47, 0.92);
 $light-green: rgba(36, 99, 19, 0.92);
-$light-blue-text:  rgba(205, 237, 255, 0.97);
-$bt-blue-default: rgba(24, 157, 246, 0.65);
-$bt-green-default:  rgba(47, 127, 20, 0.92);
+$light-blue-text: rgba(205, 237, 255, 0.97);
+$bt-blue-default: rgba(24, 161, 246, 0.65);
+$bt-green-default: rgba(47, 127, 20, 0.92);
 $bt-yellow-default: rgba(198, 196, 45, 0.92);
 $dark-grey: rgba(60, 70, 83, 0.76);
+$black: #1c1c1c;
+$orange: #fb7e37;
 $red: #900;
 $font-heading: Verdana, sans-serif;
 
@@ -15,13 +17,24 @@ $break-sm: 700px;
 $break-md: 1100px;
 $break-lg: 1600px;
 $break-xl: 2000px;
-.sidebar-left.col-md-2 > div > a{
+
+body {
+  color: $dark-grey;
+  background-image: url("/assets/spiration-light.png");
+
+}
+a, a:hover{
+  text-decoration: none;
+}
+.sidebar-left.col-md-2 > div > a {
   text-decoration: inherit;
 }
-.sidebar-left.col-md-2 > div > a > span:hover{
+
+.sidebar-left.col-md-2 > div > a > span:hover {
   background-color: $light-blue;
   color: white;
 }
+
 
 
 @mixin shadow {
@@ -43,42 +56,47 @@ $break-xl: 2000px;
   padding: 0;
 }
 
-.btn-blue, .btn-blue:focus{
+.btn-blue, .btn-blue:focus {
   @include fade-bg-button($bt-blue-default, $light-blue);
   color: $light;
   border-color: $bt-blue-default
 }
-.btn-blue:active, .btn-blue:hover{
+
+.btn-blue:active, .btn-blue:hover {
   @include fade-bg-button($light-blue, $light-blue);
   color: $light;
 }
 
-.btn-yellow, .btn-yellow:focus{
+.btn-yellow, .btn-yellow:focus {
   @include fade-bg-button($bt-yellow-default, $light-yellow);
   color: $light;
   border-color: $bt-yellow-default
 }
-.btn-yellow:active, .btn-yellow:hover{
+
+.btn-yellow:active, .btn-yellow:hover {
   @include fade-bg-button($light-yellow, $light-yellow);
   color: $light;
 }
 
-.btn-green, .btn-green:focus{
+.btn-green, .btn-green:focus {
   @include fade-bg-button($bt-green-default, $light-green);
   color: $light;
   border-color: $bt-green-default
 }
-.btn-green:active, .btn-green:hover{
+
+.btn-green:active, .btn-green:hover {
   @include fade-bg-button($light-green, $light-green);
   color: $light;
 }
 
-.sidebar-blue, .sidebar-blue:focus{
+.sidebar-blue, .sidebar-blue:focus {
   @include fade-bg-button($light, $light-grey);
   color: $dark-grey;
   border-color: $light-grey
 }
-.sidebar-blue:active, .sidebar-blue:hover{
+
+.sidebar-blue:active, .sidebar-blue:hover {
   @include fade-bg-button($bt-blue-default, $light-blue);
   color: $light;
 }
+

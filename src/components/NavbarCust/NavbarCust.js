@@ -7,7 +7,7 @@ import '../../styles/NavbarCust.scss'
 const NavbarCust = () =>
 
         <Navbar collapseOnSelect fluid>
-            <Navbar.Header>
+           {/* <Navbar.Header>
                 <Navbar.Brand>
                     <Link to="/"> <img src={logo} className="App-logo" alt="logo"/> </Link>
                 </Navbar.Brand>
@@ -15,7 +15,7 @@ const NavbarCust = () =>
                     <Link to="/"> Книги </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle/>
-            </Navbar.Header>
+            </Navbar.Header>*/}
             <Navbar.Collapse>
                 <Nav >
                     <NavItem  eventKey={2} componentClass={Link} href="/about" to="/about">

@@ -107,7 +107,9 @@ div.navbar-header a.navbar-brand:hover, div.navbar-header a.navbar-brand:focus {
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 23px;
+  height: 29px;
+  float:left;
+  margin: auto;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {

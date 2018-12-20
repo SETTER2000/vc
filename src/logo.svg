@@ -3,10 +3,10 @@
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="403px" height="403px" viewBox="197.5 98.5 403 403" xml:space="preserve">
 <rect x="196.5" y="97.5" display="none" fill="#282C34" width="406" height="406"/>
-<path fill="none" stroke="#ffffff" stroke-width="12" stroke-miterlimit="10" d="M445.639,248.256c0,0,96.545-11.283,105.076,13.801
+<path fill="#0C9BE3" stroke="#5DCEEE" stroke-width="12" stroke-miterlimit="10" d="M445.639,248.256c0,0,96.545-11.283,105.076,13.801
 	c8.531,25.083-74.869,75.005-74.869,75.005s40.562,88.332,19.343,104.197c-21.221,15.865-94.472-48.027-94.472-48.027
 	s-71.472,65.875-93.118,50.597c-21.645-15.276,16.482-104.687,16.482-104.687s-84.737-47.619-76.896-72.927
 	c7.842-25.308,104.658-16.676,104.658-16.676s19.103-95.305,45.595-95.667C423.931,153.509,445.639,248.256,445.639,248.256z"/>
-<circle fill="none" stroke="#ffffff" stroke-width="12" stroke-miterlimit="10" cx="398.95" cy="313" r="80.464"/>
+<circle fill="none" stroke="#5DCEEE" stroke-width="12" stroke-miterlimit="10" cx="398.95" cy="313" r="80.464"/>
 <circle fill="#5DCEEE" cx="398.95" cy="313" r="33"/>
 </svg>
