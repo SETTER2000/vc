@@ -3,7 +3,7 @@ import {Jumbotron, ButtonToolbar, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../../styles/Books.scss'
 
-const Test = () =>
+const Bootstrap = () =>
     <Jumbotron>
         <h1>Test</h1>
         <p>
@@ -76,4 +76,4 @@ const Test = () =>
     </Jumbotron>;
 
 
-export default Test
+export default Bootstrap

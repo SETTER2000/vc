@@ -50,10 +50,11 @@ export default class BooksFront extends Component {
     render() {
         const {addBook, removeBook, rateBook} = this;
         const {books} = this.state;
-
         return (
             <div className="row">
                 <div className="col-md-12">
+                    <h1 className="text-center"> Books</h1>
+                    <hr/>
                     <AddBookForm onNewBook={addBook}/>
                     <BookList books={books} onRate={rateBook} onRemove={removeBook}/>
                 </div>

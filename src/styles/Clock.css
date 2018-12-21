@@ -84,7 +84,7 @@ a, a:hover {
   background: linear-gradient(to bottom, rgba(24, 161, 246, 0.65) 0%, #0C9BE3 100%);
   color: white; }
 
-input {
-  outline: none; }
+.clock {
+  font-size: 5em; }
 
-/*# sourceMappingURL=ColorOrganizer.css.map */
+/*# sourceMappingURL=Clock.css.map */

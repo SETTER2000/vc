@@ -1,5 +1,5 @@
 import React from 'react';
-import AppRouter from './components/Router';
+import AppRouter from './components/AppRouter';
 
 const App = () =><AppRouter/>;
 export default App;

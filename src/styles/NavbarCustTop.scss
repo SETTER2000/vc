@@ -24,10 +24,11 @@
 }
 
 div.new-container > nav.navbar.navbar-inverse > div > div.navbar-collapse.collapse > div > div > input{
-  width: 80em;
+  width: 80rem;
 }
-.suite{
+div.new-container > nav.navbar.navbar-inverse > div > div.navbar-header > a > span{
   padding:  .1em .2em;
   font-size: 1.4em;
   display: inline-block;
+  color: $light-blue;
 }

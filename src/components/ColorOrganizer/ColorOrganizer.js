@@ -16,7 +16,9 @@ export default class ColorOrganizer extends Component {
         this.rateColor = this.rateColor.bind(this);
         this.removeColor = this.removeColor.bind(this);
     }
-
+    componentWillMount() {
+        this.style = { backgroundColor: "#CCC" }
+    }
     addColor(title, color) {
         /*
         * Функциональный setState — это изменение состояния компонента отдельно от объявления его класса.

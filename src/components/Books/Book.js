@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StarRating from "./StarRating";
-import {Link,Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Book = ({id, title, author,rating=0,onRate=f=>f, onRemove = f => f}) =>
     <div className="col-md-2 col-sm-6 center-block book">

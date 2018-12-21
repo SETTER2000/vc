@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 
 const AddBookForm = ({onNewBook = (f) => f}) => {
 
-    let _title, _description, _author;
+    let _title,  _author;
 
     const submit = e => {
         e.preventDefault();
         onNewBook(_title.value, _author.value);
         _title.value = '';
         _author.value = '';
-        // _description.value = '';
         _title.focus();
     };
 
@@ -27,10 +26,6 @@ const AddBookForm = ({onNewBook = (f) => f}) => {
                 <input className="form-control" ref={input => _author = input} type="text"
                        placeholder="Автор книги ..." value="Макс Глебов" required/>
             </div>&nbsp;
-            {/*<div className="form-group">*/}
-                {/*<textarea className="form-control" ref={input => _description = input}*/}
-                          {/*placeholder="Описание книги ..." />*/}
-            {/*</div>*/}
             <button className="btn btn-green">Добавить</button>
             <hr/>
         </form>

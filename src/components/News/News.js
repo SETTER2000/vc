@@ -2,10 +2,10 @@ import React from 'react';
 
 const News = () =>
     <div>
-        <div className="page-header">
+
             <h1>News </h1>
-            <small><em>12.10.2018</em></small>
-        </div>
+            <small><em>last update: 12.10.2018</em></small>
+        <hr/>
         <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto asperiores corporis cupiditate enim
             eos esse
             facere fugiat impedit in ipsa, laboriosam natus necessitatibus nesciunt odio perferendis, perspiciatis quae

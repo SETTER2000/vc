@@ -1,14 +1,14 @@
 import React from 'react';
-import {Navbar,FormGroup,FormControl ,Button , Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Navbar,FormGroup,FormControl ,Button } from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import logo from '../../logo.svg';
 import '../../styles/NavbarCustTop.scss'
 
-const NavbarCustTop = () =>
-        <Navbar inverse collapseOnSelect>
+const NavbarCustTop = ({suiteName}) =>
+        <Navbar inverse  collapseOnSelect fluid>
             <Navbar.Header>
                 <Navbar.Brand>
-                    <Link to="/"> <img src={logo} className="App-logo" alt="logo"/> <span className="suite"> Книги </span></Link>
+                    <Link to="/"> <img src={logo} className="App-logo" alt="logo"/> <span className="suite"> {suiteName} </span></Link>
                 </Navbar.Brand>
 
                 <Navbar.Toggle/>
