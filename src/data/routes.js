@@ -22,7 +22,7 @@ const routes = [
             {
                 "path": "/news",
                 "component": () => <NewsList/>,
-                "name": "NewsList",
+                "name": "News",
                 "icon": "stats",
                 "title": "Новости компании",
                 "description": "Краткое описание, всплывающая подсказка."
