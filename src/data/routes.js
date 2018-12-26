@@ -1,6 +1,7 @@
 import React from 'react'
 import Bootstrap from '../components/Bootstrap/Bootstrap';
 import NewsList from '../components/News/NewsList';
+import Timeline from '../components/History/Timeline';
 import About from '../components/About/About';
 import SubMenuList from '../components/Workspace/SubMenuList';
 import ColorOrganizer from '../components/ColorOrganizer/ColorOrganizer';
@@ -9,8 +10,10 @@ import Recipes from '../components/Recipes/Recipes';
 import BooksFront from '../components/Books/BooksFront';
 import MemberList from '../components/Members/MemberList';
 import data from './recipes';
+import historicDatesForSkiing from './historicDatesForSkiing';
 import about from './about'
 import MyTree from "../components/D3/MyTree";
+import CountryList from "../components/Country/CountryList";
 
 const routes = [
     {
@@ -64,7 +67,7 @@ const routes = [
         "title": () => "Список сотрудников:"
     },
     {
-        "name": "NewsList",
+        "name": "News",
         "path": "/news",
         "icon": "stats",
         "component": () => <NewsList category="general"/>,
@@ -85,6 +88,20 @@ const routes = [
         "title": () => "Меню:"
     },
     {
+        "name": "History",
+        "path": "/history",
+        "icon": "signal",
+        "component": () => <Timeline name="History of Skiing"  data={historicDatesForSkiing} />,
+        "title": () => "История событий:"
+    },
+    {
+        "name": "Country",
+        "path": "/country",
+        "icon": "th-list",
+        "component": () => <CountryList />,
+        "title": () => "Список стран:"
+    },
+    {
         "name": "Color",
         "path": "/color",
         "icon": "tint",
@@ -99,11 +116,11 @@ const routes = [
         "title": () => "Таймер:"
     },
     {
-        "name": "MyTree",
+        "name": "Tree",
         "path": "/tree",
         "icon": "tree-deciduous",
         "component": () => <MyTree/>,
-        "title": () => "Таймер:"
+        "title": () => "Дерево:"
     },
     {
         "name": "Bootstrap",

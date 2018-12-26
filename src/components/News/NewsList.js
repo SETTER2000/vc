@@ -51,7 +51,7 @@ class NewsList extends Component {
                 <hr/>
                 {(loading) ?
                     <div className="my-flex-cont">
-                        <img  className="my-flex-box" src="/assets/spinners/1.gif" alt=""/>
+                        <img  className="my-flex-box" src="/assets/spinners/5.gif" alt=""/>
                     </div> :
                     (news) ?
                         news.map((nw, i) =>
@@ -59,7 +59,7 @@ class NewsList extends Component {
                         ) :
                         <span>0 news loaded...</span>
                 }
-                {(error) ? <p>Error Loading News: error</p> : ""}
+                {(error) ? <p>Error Loading News: server is not available</p> : ""}
             </div>
         )
     }
