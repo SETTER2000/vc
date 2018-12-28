@@ -5,6 +5,7 @@ import Timeline from '../components/History/Timeline';
 import About from '../components/About/About';
 import SubMenuList from '../components/Workspace/SubMenuList';
 import ColorOrganizer from '../components/ColorOrganizer/ColorOrganizer';
+import RandomMeUsers from '../components/Members/PeopleList';
 import ClockList from '../components/Clock/ClockList';
 import Recipes from '../components/Recipes/Recipes';
 import BooksFront from '../components/Books/BooksFront';
@@ -99,6 +100,13 @@ const routes = [
         "path": "/country",
         "icon": "th-list",
         "component": () => <CountryList />,
+        "title": () => "Список стран:"
+    },
+    {
+        "name": "People",
+        "path": "/people",
+        "icon": "list",
+        "component": () =><RandomMeUsers count={500}/>,
         "title": () => "Список стран:"
     },
     {
